@@ -1,0 +1,15 @@
+PROCEDURE Plaindrome(Word: STRING)
+VAR
+    
+BEGIN
+    IF (word: length<=1) THEN
+    RETURN true ;
+        set_instructions
+    END_IF
+  ELSE_IF (word[0]== word[-1]) THEN
+  RETURN delete (word[1:-1]);
+  END_IF
+  ELSE
+  RETURN false ;
+  END
+
